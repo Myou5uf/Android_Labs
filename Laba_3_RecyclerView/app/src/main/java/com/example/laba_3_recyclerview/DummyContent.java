@@ -16,7 +16,7 @@ public class DummyContent {
             for (int j = 0; j<k; j++){
                 builder.append("\nДетальная информация.");
             }
-            ITEMS.add(new DummyItem (String.valueOf(k),"Элемент" + k, builder.toString()));
+            ITEMS.add(new DummyItem (String.valueOf(k),"Элемент №" + k, builder.toString()));
 
         }
     }
