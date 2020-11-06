@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Laba_3_RecyclerView</string>
+    <string name="tv_name_id">Id</string>
+    <string name="tv_name_item">Item</string>
 </resources>
