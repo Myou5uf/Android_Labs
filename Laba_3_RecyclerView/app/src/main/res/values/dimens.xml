@@ -2,4 +2,5 @@
 <resources>
     <dimen name="text_dimension">24sp</dimen>
     <dimen name="margin_size">15dp</dimen>
+    <dimen name="margin_size_details">10dp</dimen>
 </resources>
