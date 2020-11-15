@@ -28,4 +28,12 @@
         android:layout_gravity="fill_horizontal"
         android:text="@string/tv_nameCat2" />
 
+
+    <TextView
+        android:id="@+id/id_tv_color"
+        android:textSize="@dimen/tv_size"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_margin="@dimen/margin_size"
+        android:layout_gravity="fill_horizontal" />
 </GridLayout>

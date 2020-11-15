@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tv;
     TextView tv_from;
+    TextView tv_color;
 
 
     @Override
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv = findViewById(R.id.id_tv);
         tv_from = findViewById(R.id.id_tv_from);
-
+        tv_color = findViewById(R.id.id_tv_color);
 
         Cat murzik = new Cat();
         murzik.name = "Мурзик";
@@ -42,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
         String jsonText = "{'name':'Мурзик','color':-16777216,'age':8}";
         Cat barsik = gson.fromJson(jsonText, Cat.class);
         Log.i("GSON","Имя: " + barsik.name + "\nВозраст: " + barsik.age);
-        tv_from.setText("Кот: " + barsik.name + ", " + barsik.age + " лет, " + " цвет: " + barsik.color);
+        tv_from.setText("Кот: " + barsik.name + ", " + barsik.age + " лет, " + " цвет: ");
+        // Добавил компонент Textview и закрасил его цветом кота.
+        tv_color.setBackgroundColor(barsik.color);
 
     }
 }
